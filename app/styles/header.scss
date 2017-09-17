@@ -1,0 +1,28 @@
+@import 'colors';
+
+.header{
+    position: fixed;
+    z-index: 9;
+    opacity: 0.95;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    background-color: $BlueGreyHeader;
+    color: #fff;
+  
+    &__menu{
+      font-family: Bodoni;
+      font-size: 16px;
+      line-height: 19px;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-bottom: 0;
+  
+      li{
+        padding: 0 1rem;
+      }
+    }
+  }
