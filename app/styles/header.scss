@@ -11,6 +11,17 @@
     background-color: $BlueGreyHeader;
     color: #fff;
   
+    .logo{
+      width: 100%;
+      height: auto;
+    }
+
+    &__menuwrapper{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
     &__menu{
       font-family: Bodoni;
       font-size: 16px;
@@ -23,6 +34,7 @@
   
       li{
         padding: 0 1rem;
+        text-transform: uppercase;
       }
     }
   }
