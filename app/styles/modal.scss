@@ -1,0 +1,21 @@
+@import 'colors';
+
+.modal-content{
+  border-radius: 0;
+  background-color: #5B7186;
+  color: #fff;
+}
+
+.modal-header{
+  border-bottom: none;
+  justify-content: flex-end;
+
+  .close{
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.modal-body{
+  padding: 0 40px 40px 40px;
+}
