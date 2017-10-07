@@ -5,6 +5,7 @@
 @import 'fonts';
 @import 'colors';
 @import 'header';
+@import 'contact';
 @import 'footer';
 @import 'modal';
 
@@ -35,6 +36,10 @@ h3 {
   font-size: 30px;
   line-height: 36px;
   margin-bottom: 15px;
+}
+
+.center{
+  text-align: center;
 }
 
 .readmore{
@@ -71,7 +76,6 @@ h3 {
 
 .banner{
   height: 510px;
-  width: 100%;
   background-color: $BlueGreyLight;
   display: flex;
   align-items: center;
