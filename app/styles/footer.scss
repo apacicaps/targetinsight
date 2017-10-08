@@ -6,6 +6,10 @@
     background-color: $BlueGreyFooter;
     color: #fff;
     padding: 60px 0 0;
+
+    @media (min-width: 1200px) {
+      padding: 60px 10% 0;
+    }
   
     &__block{
       display: flex;
@@ -14,6 +18,12 @@
   
       &.right{
         align-items: flex-end;
+      }
+
+      &.center{
+        @media (max-width: 576px) {
+          margin-top:30px;
+        }
       }
     }
   
