@@ -97,13 +97,18 @@ h3 {
 
 img{
   width: 100%;
+  margin-bottom: 24px;
 }
 
 .contentblock {
   padding: 90px 0;
 
   @media (min-width: 1200px) {
-    padding: 90px 10%;
+    padding: 90px 15%;
+  }
+
+  @media (max-width: 576px) {
+    padding: 45px 0;
   }
 
   &.darkblue, &.grey {
@@ -131,6 +136,10 @@ img{
     font-size: 15px;
     font-weight: 300;
     line-height: 22px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__img{

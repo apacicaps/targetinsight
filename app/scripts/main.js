@@ -18,3 +18,11 @@ $('#changemanagementlink').on('click', function(){
 $('#bestyrelsesarbejdelink').on('click', function(){
     $('#bestyrelsesarbejdeModal').modal('show');
 })
+
+
+$( '.toggle-menu' ).on( 'click', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+    $('.header__menuwrapper').toggleClass('active');
+    $('.header').toggleClass('menu_open');
+});
