@@ -15,14 +15,14 @@
   <!-- endbuild -->
 
   <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css">
   <link rel="stylesheet" href="styles/main.css">
+
   <!-- endbuild -->
 
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
-
-
 
 </head>
 
@@ -30,19 +30,27 @@
   <div class="container-fluid">
 
     <div class="row header">
-        <button type="button" class="toggle-menu visible-xs">
-            <span class="burger-lines"></span>
-        </button>
-      
+      <button type="button" class="toggle-menu visible-xs">
+        <span class="burger-lines"></span>
+      </button>
+
       <div class="col-xs-10 col-md-3 header__logowrapper">
         <img class="logo" src="/images/logo_negative.png" />
       </div>
       <nav class="col-xs-2 col-md-9 header__menuwrapper">
         <ul class="header__menu">
-          <li class="cushycms" title="Menu_1"><a href="#intro">Intro</a></li>
-          <li class="cushycms" title="Menu_2"><a href="#services">Services</a></li>
-          <li class="cushycms" title="Menu_3"><a href="#om">Om mig</a></li>
-          <li class="cushycms" title="Menu_4"><a href="#contact">Kontakt</a></li>
+          <li class="cushycms" title="Menu_1">
+            <a href="#intro">Intro</a>
+          </li>
+          <li class="cushycms" title="Menu_2">
+            <a href="#services">Services</a>
+          </li>
+          <li class="cushycms" title="Menu_3">
+            <a href="#om">Om mig</a>
+          </li>
+          <li class="cushycms" title="Menu_4">
+            <a href="#contact">Kontakt</a>
+          </li>
         </ul>
       </nav>
 
@@ -65,26 +73,42 @@
         <div class="title__block cushycms" title="Intro">Intro</div>
         <div class="title__block__line black"></div>
         <div>
-          <h2 class="cushycms" title="Intro_Overskrift">Succesfuld forandring med målfokuseret ledelse</h2>
+          <h3 class="cushycms" title="Intro_Overskrift">Succesfuld forandring med målfokuseret ledelse</h3>
         </div>
         <div class="contentblock__paragraph cushycms" title="Intro_Tekst">
           <p>
             Mange virksomheder har svært ved at realisere de mål, der bliver sat ved større ændringer eller ved systemomlægninger. Ofte
             tager sådanne forandringsprojekter længere tid end planlagt, kræver flere ressourcer end forudset eller fejler
-            på at levere de fordele, der var forudsætningen for ændringerne. <br> Kort sagt: Projekterne tager
-            længere tid, koster flere penge og giver ikke ”bang for the buck”.
+            på at levere de fordele, der var forudsætningen for ændringerne.
+          </p>
+          <p>
+            Kort sagt: Projekterne tager længere tid, koster flere penge og giver ikke ”bang for the buck”.
           </p>
           <p>
             Igennem hele min karriere har jeg arbejdet med at lede forandringer – og med at sikre, at forandringerne leverer Business
             casens benefit, indenfor cost, tid og kvalitet.
           </p>
+          <p>
+            Jeg ser det derfor som særligt vigtigt, at sørge for:
+            <ul>
+              <li>
+                Styring af eksterne samarbejdspartnere, f.eks. systemleverandører, outsourcere m.fl.
+              </li>
+              <li>
+                Fokus på programstyringen.
+              </li>
+              <li>
+                Pleje af alle interessenter i forandringsprocessen.
+              </li>
+            </ul>
+          </p>
           <a id="intromodallink" href="" class="readmore" data-toggle="modal" data-target="#introModal">
-                Læs mere
-              </a>
+            Læs mere
+          </a>
         </div>
       </div>
 
-      <div class="col-lg-6 mt-4">
+      <div class="col-lg-6 mobile-topmargin">
         <img class="cushycms" src="images/marie_2.jpg" alt="Marie Hahn-Petersen, projekt– og forandringsleder" title="Marie Hahn-Petersen, projekt– og forandringsleder"
         />
       </div>
@@ -94,23 +118,29 @@
     <div class="row contentblock darkblue" id="services">
 
       <div class="col-xs-6 col-md-3">
-        <img class="cushycms" src="images/projektledelse.jpg" alt="Projektledelse – i mål til tiden" title="Projektledelse – i mål til tiden"/>
+        <img class="cushycms" src="images/projektledelse.jpg" alt="Projektledelse – i mål til tiden" title="Projektledelse – i mål til tiden"
+        />
       </div>
       <div class="col-xs-6 col-md-3">
         <div class="title__block cushycms" title="Blok_Projektledelse" id="projektledelse">Projektledelse</div>
         <div class="title__block__line"></div>
         <div class="contentblock__paragraph cushycms" title="Blok_Projektledelse_Tekst">
           <p>
+            Jeg arbejder både agilt og efter mere traditionelle projektstyringsmodeller, og har ledet både store programmer og enkeltstående
+            projekter.
+          </p>
+          <p>
             Vigtigst for mig er, at jeg skaber den forandring, der realiserer målene om effektivisering og øget vækst.
           </p>
           <a id="projektledelselink" href="" class="readmore" data-toggle="modal" data-target="#projektledelseModal">
-                  Læs mere
-                </a>
+            Læs mere
+          </a>
         </div>
       </div>
 
       <div class="col-xs-6 col-md-3">
-        <img class="cushycms" src="images/forandringsledelse.jpg" alt="Forandringsledelse - adfærdsændring med gevinst" title="Forandringsledelse - adfærdsændring med gevinst"/>
+        <img class="cushycms" src="images/forandringsledelse.jpg" alt="Forandringsledelse - adfærdsændring med gevinst" title="Forandringsledelse - adfærdsændring med gevinst"
+        />
       </div>
       <div class="col-xs-6 col-md-3">
         <div class="title__block cushycms" title="Blok_Forandringsledelse" id="forandringsledelse">Forandringsledelse</div>
@@ -120,9 +150,13 @@
             Al udvikling kræver en adfærdsændring for at realisere gevinsterne, og det sker ikke af sig selv. Derfor er det så vigtigt
             at indarbejde en struktureret tilgang til forandringsledelse i gennemførelsen af et projekt.
           </p>
+          <p>
+            På alle mine projekter arbejder jeg målrettet og struktureret med forandringsledelse. Jeg er certificeret i flere forandringsmetoder
+            og som facilitator. Og har for nyligt tilføjet adfærdsdesign og nudging til min værktøjskasse.
+          </p>
           <a id="forandringsledelselink" href="" class="readmore" data-toggle="modal" data-target="#forandringsledelseModal">
-                    Læs mere
-                  </a>
+            Læs mere
+          </a>
         </div>
       </div>
 
@@ -131,9 +165,10 @@
     <div class="row contentblock grey">
 
       <div class="col-xs-6 col-md-3">
-        <img class="cushycms" src="images/bestyrelse.jpg" alt="Opnå vækst med nye digitale løsninger" title="Opnå vækst med nye digitale løsninger"/>
+        <img class="cushycms" src="images/bestyrelse.jpg" alt="Opnå vækst med nye digitale løsninger" title="Opnå vækst med nye digitale løsninger"
+        />
       </div>
-      <div class="col-xs-6 col-md-3">
+      <div class="col-xs-6 col-md-9">
         <div class="title__block cushycms" title="Blok_Bestyrelsesarbejde" id="bestyrelsesarbejde">Bestyrelsesarbejde</div>
         <div class="title__block__line"></div>
         <div class="contentblock__paragraph cushycms" title="Blok_Bestyrelsesarbejde_Tekst">
@@ -141,17 +176,13 @@
             I flere år har jeg arbejdet med strategisk udvikling på CEO niveau, og jeg har været med til at implementere nye digitale
             løsninger i mange virksomheder, som har resulteret i både vækst og større effektivitet.
           </p>
-          <a id="bestyrelsesarbejdelink" href="" class="readmore" data-toggle="modal" data-target="#bestyrelsesarbejdeModal">
-                    Læs mere
-                  </a>
+          <p>
+            Som bestyrelsesmedlem bidrager jeg med erfaring og viden om, hvordan den digitale udvikling kan udnyttes som vækstgenerator
+            og til at skabe effektive organisationer. Samtidig ved jeg, hvad der skal til for at investering i ny teknologi
+            bliver en succes, og hvordan den forandringsproces og de adfærdsændringer der er nødvendige for at realisere
+            gevinsterne, skal designes og implementeres. Alt sammen kompetencer som er et must i en bestyrelse.
+          </p>
         </div>
-      </div>
-
-      <div class="col-xs-6 col-md-3">
-
-      </div>
-      <div class="col-xs-6 col-md-3">
-
       </div>
 
     </div>
@@ -159,11 +190,11 @@
 
     <div class="row contentblock white" id="om">
 
-      <div class="col-md-4 mb-4">
-        <img class="cushycms" src="images/marie_1.jpg" alt="Marie Hahn-Petersen - Projekt- og forandringsleder" title="Marie Hahn-Petersen - Projekt- og forandringsleder"
+      <div class="col-md-5 mb-4">
+        <img class="cushycms" src="images/marie_2.jpg" alt="Marie Hahn-Petersen - Projekt- og forandringsleder" title="Marie Hahn-Petersen - Projekt- og forandringsleder"
         />
       </div>
-      <div class="col-md-8">
+      <div class="col-md-7">
         <div class="title__block cushycms" title="Om">Om mig</div>
         <div class="title__block__line black"></div>
         <div>
@@ -180,12 +211,12 @@
           </p>
           <p>
             Jeg er et projekt -og udviklingsmenneske, og leverer de bedste resultater, når jeg arbejder i en projektkultur, hvor jeg
-            sammen med jer skaber fremdrift og forandring. Det er her jeg har min passion, og hvor jeg for alvor
-            brænder igennem. Og netop derfor passer freelancer livet godt til mig.
+            sammen med jer skaber fremdrift og forandring. Det er her jeg har min passion, og hvor jeg for alvor brænder
+            igennem. Og netop derfor passer freelancer livet godt til mig.
           </p>
           <a id="aboutmodallink" href="" class="readmore" data-toggle="modal" data-target="#omModal">
-                  Læs mere
-                </a>
+            Læs mere
+          </a>
         </div>
       </div>
 
@@ -277,14 +308,47 @@
     </div>
 
 
+    <div class="row contentblock white" id="clients">
+
+      <div id="clientlogos" class="cushycms" title="Client Logos">
+        <img src="images/clientlogos/ap.png" />
+        <img src="images/clientlogos/catacap.png" />
+        <img src="images/clientlogos/consulting.png" />
+        <img src="images/clientlogos/letpension.png" />
+      </div>
+
+      <div class="col-md-12">
+        <div class="title__block cushycms" title="Referencer">Referencer</div>
+        <div class="title__block__line black"></div>
+      </div>
+      <div class="col-md-12">
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+          </div>
+          <div class="swiper-button-next">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
     <!-- Modals -->
     <div class="modal fade" id="introModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
           <div class="modal-body">
             <div class="container">
@@ -296,38 +360,6 @@
                     <h2 class="cushycms" title="Intro_Popup_Overskrift">Succesfuld forandring med målfokuseret ledelse</h2>
                   </div>
                   <div class="contentblock__paragraph cushycms" title="Intro_Popup_Tekst">
-                    <p>
-                      Mange virksomheder har svært ved at realisere de mål, der bliver sat ved større ændringer eller ved systemomlægninger. Ofte
-                      tager sådanne forandringsprojekter længere tid end planlagt, kræver flere ressourcer end forudset eller
-                      fejler på at levere de fordele, der var forudsætningen for ændringerne. <br>                      Kort sagt: Projekterne tager længere tid, koster flere penge og giver ikke ”bang for the buck”.
-                    </p>
-                    <p>
-                      Igennem hele min karriere har jeg arbejdet med at lede forandringer – og med at sikre, at forandringerne leverer Business
-                      casens benefit, indenfor cost, tid og kvalitet.
-                    </p>
-                    <p>
-                      Mange virksomheder har svært ved at realisere de mål, der bliver sat ved større ændringer eller ved systemomlægninger. Ofte
-                      tager sådanne forandringsprojekter længere tid end planlagt, kræver flere ressourcer end forudset eller
-                      fejler på at levere de fordele, der var forudsætningen for ændringerne. <br>                      Kort sagt: Projekterne tager længere tid, koster flere penge og giver ikke ”bang for the buck”.
-                    </p>
-                    <p>
-                      Igennem hele min karriere har jeg arbejdet med at lede forandringer – og med at sikre, at forandringerne leverer Business
-                      casens benefit, indenfor cost, tid og kvalitet.
-                    </p>
-                    <p>
-                      Jeg ser det derfor som særligt vigtigt, at sørge for:
-                      <ul>
-                        <li>
-                          Styring af eksterne samarbejdspartnere, f.eks. systemleverandører, outsourcere m.fl.
-                        </li>
-                        <li>
-                          Fokus på programstyringen.
-                        </li>
-                        <li>
-                          Pleje af alle interessenter i forandringsprocessen.
-                        </li>
-                      </ul>
-                    </p>
                     <p>
                       Når jeg er projektansvarlig under en systemomlægning eller en turn around, tager jeg altid afsæt i benefit-realiseringen
                       af business casen og skaber opbakning i organisationen om disse benefits.
@@ -364,20 +396,6 @@
                     <h2 class="cushycms" title="Om_Popup_Overskrift">Marie Hahn-Petersen</h2>
                   </div>
                   <div class="contentblock__paragraph cushycms" title="Om_Popup_Tekst">
-                    <p>
-                      Efter mange år med ansættelse i store og små virksomheder har jeg valgt et arbejdsliv som freelancer. Det giver mig frihed
-                      til at arbejde med præcis de opgaver, som jeg brænder allermest for.
-                    </p>
-                    <p>
-                      Min erfaringsbase stammer dels fra 7 år i Accenture som Change Management Konsulent og fra 17 år i den finansielle sektor
-                      i forskellige lederroller - bl.a. som projektleder og programchef for store forretnings -og digitale
-                      transformationsprojekter.
-                    </p>
-                    <p>
-                      Jeg er et projekt -og udviklingsmenneske, og leverer de bedste resultater, når jeg arbejder i en projektkultur, hvor jeg
-                      sammen med jer skaber fremdrift og forandring. Det er her jeg har min passion, og hvor jeg for alvor
-                      brænder igennem. Og netop derfor passer freelancer livet godt til mig.
-                    </p>
                     <p>
                       Som freelancer synes jeg det er vigtigt, at ”den rette mand” løser opgaven. Derfor har jeg været med til at starte netværket
                       ”Community Consulting”, som er et netværk af senior konsulenter, som alle er freelancere. Gennem netværket
@@ -452,8 +470,8 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
           <div class="modal-body">
             <div class="container">
@@ -484,8 +502,8 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
           <div class="modal-body">
             <div class="container">
@@ -519,16 +537,25 @@
     <div class="row footer">
 
 
-      <div class="col-md-5 footer__block">
+      <div class="col-md-4 footer__block">
         <div class="title__block cushycms" title="Footer_Navn">Marie Hahn-Petersen</div>
         <div class="title__block__line"></div>
         <div>
-          <h3 class="cushycms" title="Footer_venstre1">FREELANCE</h3>
-          <h3 class="cushycms" title="Footer_venstre2">Forandrings -og projektleder</h3>
+          <h3 class="cushycms" title="Footer_venstre2">Projekt -og forandringsleder</h3>
         </div>
       </div>
-      <div class="col-md-3 footer__block center">
-        <div class="title__block cushycms" title="Footer_Linkedin">Find mig på linkedin</div>
+      <div class="col-md-4 footer__block logo">
+        <img class="logo" src="/images/logo_negative.png" />
+      </div>
+      <div class="col-md-4 footer__block right">
+        <div class="title__block cushycms" title="Footer_Kontakt">Kontakt</div>
+        <div class="title__block__line right"></div>
+        <div class="footer__contact">
+          <span class="cushycms" title="Footer_Kontakt_Navn">MARIE HAHN-PETERSEN</span>
+          <span class="cushycms" title="Footer_Kontakt_Tlf">Telefon: // +45 22 10 90 30</span>
+          <span class="cushycms" title="Footer_Kontakt_Mail">Mail: // mhp@targetinsight.dk</span>
+        </div>
+        <div class="title__block mt-4 cushycms" title="Footer_Linkedin"></div>
         <div class="title__block__line"></div>
         <div>
           <a href="https://www.linkedin.com/in/marie-hahn-petersen-54a1a84/" target="_blank">
@@ -547,15 +574,6 @@
               </g>
             </svg>
           </a>
-        </div>
-      </div>
-      <div class="col-md-4 footer__block right">
-        <div class="title__block cushycms" title="Footer_Kontakt">Kontakt</div>
-        <div class="title__block__line right"></div>
-        <div class="footer__contact">
-          <span class="cushycms" title="Footer_Kontakt_Navn">MARIE HAHN-PETERSEN</span>
-          <span class="cushycms" title="Footer_Kontakt_Tlf">Telefon: // +45 22 10 90 30</span>
-          <span class="cushycms" title="Footer_Kontakt_Mail">Mail: // mhp@targetinsight.dk</span>
         </div>
       </div>
 
@@ -592,6 +610,7 @@
   <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
   <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
   <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+  <script src="/bower_components/swiper/dist/js/swiper.min.js"></script>
   <!-- endbuild -->
 
   <!-- build:js scripts/main.js -->
