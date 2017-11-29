@@ -11,8 +11,12 @@
 
 /* Space out content a bit */
 body {
-  background: #fff;
+  background: $BlueGreyFooter;
   color: #000;
+}
+
+.container{
+  max-width:1400px;
 }
 
 h1 {
@@ -104,7 +108,7 @@ img{
   padding: 90px 0;
 
   @media (min-width: 1200px) {
-    padding: 90px 15%;
+    padding: 90px 6%;
   }
 
   @media (max-width: 576px) {
@@ -131,6 +135,14 @@ img{
     background-color: $BlueGreyLight;
   }
 
+  &.white{
+    background-color: #fff;
+  }
+
+  &.swiperblock{
+    padding: 0 30px 90px;
+  }
+
   &__paragraph {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -151,6 +163,13 @@ img{
   }
 }
 
+.nopadding{
+  @media (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .mobile-topmargin{
   @media (max-width: 768px) {
     margin-top: 1.5rem !important;
@@ -166,12 +185,15 @@ img{
   max-height: 70px;
   width:auto;
   margin-bottom: 0;
+
+  @media (max-width: 1200px) {
+    max-width: 160px;
+  }
 }
 
 .swiper-container {
   width: 100%;
   height: auto;
-  margin: 60px 0 0 !important;
   padding-bottom: 100px !important;
 }
 
@@ -188,14 +210,15 @@ img{
   width: 14px !important;
   height: 22px !important;
   background-size: contain !important;
+  opacity: 0.8;
 }
 
 .swiper-button-prev {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%235C7387'%2F%3E%3C%2Fsvg%3E") !important;
 }
 
 .swiper-button-next {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%235C7387'%2F%3E%3C%2Fsvg%3E") !important;
 }
 
 .swiper-pagination-bullet {
