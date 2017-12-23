@@ -15,6 +15,10 @@ body {
   color: #000;
 }
 
+.text-elem{
+  pointer-events: none;
+}
+
 .container{
   max-width:1400px;
 }
