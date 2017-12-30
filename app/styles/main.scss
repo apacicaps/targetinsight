@@ -19,6 +19,10 @@ body {
   pointer-events: none;
 }
 
+.not-text-elem{
+  pointer-events: initial;
+}
+
 .container{
   max-width:1400px;
 }
